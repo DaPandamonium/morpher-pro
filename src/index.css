@@ -1,0 +1,32 @@
+@layer reset, base, tokens, recipes, utilities;
+
+/* Keyframe animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Global Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0f11;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #581c87; /* Darker purple */
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7e22ce; /* Lighter purple on hover */
+}
